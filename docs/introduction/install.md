@@ -118,3 +118,18 @@ CGO_LDFLAGS="-lsnappy" make build TENDERMINT_BUILD_OPTIONS=cleveldb
 ```
 
 which puts the binary in `./build`.
+
+
+## tenderminal
+1.编译
+make install
+make build
+.tendernimal/build/bin/tendermint version
+
+2.交易
+localhost:26657/broadcast_tx_commit?tx="asda"
+localhost:26657/abci_query?tx="asda"
+localhost:26657/abci_query?data="name"
+localhost:26657/status
+3.展示
+
